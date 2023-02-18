@@ -28,9 +28,9 @@ export const AuthProvider = ({ children }) => {
   const setToken = (token) => {
     _setToken(token);
     if (token) {
-      Cookies.set("token", token, { expires: 7, path: "/" });
+      Cookies.set("ACCESS_TOKEN", token, { expires: 7, path: "/" });
     } else {
-      Cookies.remove("name", { path: "/" });
+      Cookies.remove("ACCESS_TOKEN", { path: "/" });
     }
   };
 
