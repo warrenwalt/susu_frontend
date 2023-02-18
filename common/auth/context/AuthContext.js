@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { serialize, parse } from "cookie";
 import { setCookie, destroyCookie } from "next-cookies";
+import Cookies from "js-cookie";
 
 const AuthContext = createContext({
   currentUser: null,
@@ -27,9 +28,9 @@ export const AuthProvider = ({ children }) => {
   const setToken = (token) => {
     _setToken(token);
     if (token) {
-      localStorage.setItem("ACCESS_TOKEN", token);
+      Cookies.set("token", token, { expires: 7, path: "/" });
     } else {
-      localStorage.removeItem("ACCESS_TOKEN");
+      Cookies.remove("name", { path: "/" });
     }
   };
 
