@@ -5,8 +5,8 @@ faUser;
 export default function NavBar(user) {
   return (
     <>
-      <nav className="flex justify-evenly border-4 border-red-600 p-10 pb-4">
-        <div className="border-4 border-red-600">
+      <nav className="flex justify-evenly  p-10 pb-4">
+        <div className="">
           <div class="hamburger-icon">
             <svg class="hamburger-icon__icon" viewBox="0 0 24 24">
               <path
@@ -16,14 +16,14 @@ export default function NavBar(user) {
             </svg>
           </div>
         </div>
-        <div className="border-4 border-red-600">
+        <div className="">
           <h1 className="text-4xl italic font-serif uppercase">susu studio</h1>
           <p className="flex font-thin justify-center">
             modest . modern . fashion
           </p>
         </div>
-        <div className="flex border-4 border-red-600">
-          <form className="w-1/4 border-4">
+        <div className="flex ">
+          <form className="w-1/4">
             <input type="search" placeholder="search" />
           </form>
           <FontAwesomeIcon icon={faUser} size="2x" />

@@ -44,8 +44,12 @@
   transform: rotate(45deg);
 }
 
-/* div, p{
+/* div, p, small{
   border: #000 solid 2px;
+} */
+
+/* body{
+  background-color: #000;
 } */
 
   

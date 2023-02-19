@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="flex">
-      <div className="relative w-11/12 border-4 bg-amber-100">
+      <div className="relative w-11/12  bg-amber-100">
         <div>
           <div className="text-center p-28 pl-0 space-y-2">
             <h2 className="font-light text-4xl">Dare to waer</h2>
@@ -14,7 +14,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="bg-gray-600 px-2 py-4">footer</div>
-        <div className="z-50 absolute right-0 bottom-0 border-2">
+        <div className="z-50 absolute right-0 bottom-0">
           <Image
             src={"/crop top.png"}
             alt="my image"
@@ -23,7 +23,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="w-1/12 border-4">secondanry</div>
+      <div className="w-1/12 ">secondanry</div>
     </div>
   );
 }

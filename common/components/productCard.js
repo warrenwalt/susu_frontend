@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductCard() {
   return (
-    <div className="flex flex-col w-90 text-lg">
+    <div className="flex flex-col text-lg w-2/12">
       <div className="flex justify-center">
         <Image src="/top.jpg" width={180} height={150} alt="bag" />
       </div>
