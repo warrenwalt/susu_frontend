@@ -1,7 +1,17 @@
+import ProductCard from "./productCard";
+
 export default function FeaturedProducts() {
   return (
-    <div className="p-10 py-36 border-4 border-red-600">
-      <h1>Featured Products</h1>
+    <div className="mt-20 space-y-16">
+      <div className="flex justify-center text-center font-bold text-2xl tracking-wide uppercase">
+        Featured products
+      </div>
+      <div className="flex space-x-12 justify-center px-2">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
     </div>
   );
 }

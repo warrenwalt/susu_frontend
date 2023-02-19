@@ -15,7 +15,12 @@ export default function Hero() {
         </div>
         <div className="bg-gray-600 px-2 py-4">footer</div>
         <div className="z-50 absolute right-0 bottom-0 border-2">
-          <Image src={"/bag.jpg"} alt="my image" width={300} height={300} />
+          <Image
+            src={"/crop top.png"}
+            alt="my image"
+            width={300}
+            height={300}
+          />
         </div>
       </div>
       <div className="w-1/12 border-4">secondanry</div>
