@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useAuthStateContext } from "../common/auth/context/AuthContext";
 import axiosInstance from "../lib/axios";
 
-const { useAuthStateContext } = require("../common/auth/context/AuthContext");
-
+useAuthStateContext;
 export default function Login() {
   const { setUser, setToken } = useAuthStateContext();
 
