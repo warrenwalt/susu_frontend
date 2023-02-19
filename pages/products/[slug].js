@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import DefaultLayout from "../../common/components/layout";
 import axiosInstance from "../../lib/axios";
 
 export default function Product({ product }) {
@@ -9,11 +10,11 @@ export default function Product({ product }) {
   }
 
   return (
-    <>
+    <DefaultLayout>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>{JSON.stringify(product.categories)}</p>
-    </>
+    </DefaultLayout>
   );
 }
 

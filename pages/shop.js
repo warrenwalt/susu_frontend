@@ -1,12 +1,9 @@
 import DefaultLayout from "../common/components/layout";
 
-export default function Cart() {
+export default function Shop() {
   return (
     <DefaultLayout>
-      <div>
-        <h1>Cart</h1>
-        <p>Welcome to the cart</p>
-      </div>
+      <div>This is the shop page, Welcome!</div>
     </DefaultLayout>
   );
 }
