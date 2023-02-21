@@ -5,7 +5,7 @@ import Carousel from "../common/components/carousel";
 import Chat from "../common/components/chat";
 import FeaturedProducts from "../common/components/FeaturedProducts";
 import Hero from "../common/components/Hero";
-import InfoCard from "../common/components/infoCards";
+import InfoCard from "../common/components/infoCard";
 import DefaultLayout from "../common/components/layout";
 import NewArrivals from "../common/components/newArrivals";
 import Socials from "../common/components/socials";
@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <DefaultLayout>
-      <main>
+      <main className="container">
         <Hero />
         <FeaturedProducts />
         <Carousel />
