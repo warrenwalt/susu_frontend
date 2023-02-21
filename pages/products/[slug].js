@@ -4,7 +4,7 @@ import DefaultLayout from "../../common/components/layout";
 import WearWith from "../../common/components/wearWith";
 import InfoCard from "../../common/components/infoCard";
 import Chat from "../../common/components/chat";
-import axiosInstance from "../../lib/axios";
+// import axiosInstance from "../../lib/axios";
 import FilterForm from "../../common/components/filterForm";
 
 export default function Product({ product }) {
@@ -31,7 +31,7 @@ export default function Product({ product }) {
           <WearWith />
         </div>
         <div className="mt-10 space-y h-fit">
-          <div className="font-bold">{product.name}</div>
+          <div className="font-bold">Women Dresess</div>
           <div className="font-light">Orange</div>
           <div className="flex space-x-4 font-light">
             <div className="font-bold">$20.00</div>
@@ -75,11 +75,11 @@ export default function Product({ product }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const { slug } = context.params;
-  const { data: product } = await axiosInstance.get(`/products/${slug}`);
+// export async function getServerSideProps(context) {
+//   const { slug } = context.params;
+//   const { data: product } = await axiosInstance.get(`/products/${slug}`);
 
-  return {
-    props: product,
-  };
-}
+//   return {
+//     props: product,
+//   };
+// }
