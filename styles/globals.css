@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger-icon__icon {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon__line {
+  stroke-width: 2;
+  stroke: #000;
+  transition: stroke-dasharray 0.3s ease-in-out;
+}
+
+.hamburger-icon__line--top {
+  stroke-dasharray: 24 24;
+  stroke-dashoffset: 0;
+}
+
+.hamburger-icon__line--bottom {
+  stroke-dasharray: 24 24;
+  stroke-dashoffset: 0;
+}
+
+.hamburger-icon--active .hamburger-icon__line--top {
+  stroke-dasharray: 14 24;
+  stroke-dashoffset: -10;
+}
+
+.hamburger-icon--active .hamburger-icon__line--bottom {
+  stroke-dasharray: 14 24;
+  stroke-dashoffset: 10;
+}
+
+.hamburger-icon--active .hamburger-icon__icon {
+  transform: rotate(45deg);
+}
+
 html{
   overflow-x: hidden;
 }
